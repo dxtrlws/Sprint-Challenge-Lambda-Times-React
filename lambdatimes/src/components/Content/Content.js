@@ -23,7 +23,7 @@ export default class Content extends Component {
 
   changeSelected = tab => {
     // this function should take in the tab and update the state with the new tab.
-    this.setState({ selected: tab })
+    this.setState({ selected: tab });
   };
 
   filterCards = () => {
@@ -39,7 +39,10 @@ export default class Content extends Component {
           of the items from cardData. 
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
-    return this.state.cards;
+    let filterCards = this.state.cards.filter(
+      card => card.tab === this.state.selected
+    );
+    return this.state.selected === "all" ? this.state.cards : filterCards;
   };
 
   render() {
