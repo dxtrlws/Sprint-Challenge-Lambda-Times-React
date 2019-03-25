@@ -93,18 +93,14 @@ export const Header = styled.div`
     font-weight: bold;
     letter-spacing: 1px;
   }
-  
- 
 `;
 export const Date = styled.span`
-margin-left: 25px;
+  margin-left: 25px;
   flex: 1;
-
-`
+`;
 
 export const Temp = styled.span`
-text-align: right;
-    margin-right: 25px;
-    flex: 1;
-
-`
+  text-align: right;
+  margin-right: 25px;
+  flex: 1;
+`;
