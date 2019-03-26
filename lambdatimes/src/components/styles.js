@@ -9,6 +9,7 @@ export const TopBar = styled.div`
   position: fixed;
   height: 44px;
   background-color: #333;
+  z-index: 4;
 `;
 
 export const Container = styled.div`
@@ -20,6 +21,9 @@ export const Container = styled.div`
   color: #fff;
   letter-spacing: 1px;
   padding: 0 10px;
+  @media (min-width: 1280px) {
+      width: 1280px;
+  }
 `;
 
 export const ContainerLeft = styled.div`
@@ -93,6 +97,8 @@ export const Header = styled.div`
     font-weight: bold;
     letter-spacing: 1px;
   }
+  @media (min-width: 1280px) {
+      width: 1280px;
 `;
 export const Date = styled.span`
   margin-left: 25px;
